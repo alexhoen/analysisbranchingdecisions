@@ -1,0 +1,3133 @@
+exact version 0.1.0 [mode: debug][GitHash: cf96dc1]
+Copyright (C) 2024 Zuse Institute Berlin (ZIB)
+
+External libraries: 
+  Boost    1.72.0 	 (https://www.boost.org/)
+  TBB            	 Thread building block https://github.com/oneapi-src/oneTBB developed by Intel
+  SCIP     9.2.0 	 Mixed Integer Programming Solver developed at Zuse Institute Berlin (scip.zib.de) [GitHash: 855ed6f922-dirty]
+  SoPlex   8.0.0 	 Linear Programming Solver developed at Zuse Institute Berlin (soplex.zib.de) [GitHash: 7b9bd461]
+
+reading took 0.0250 seconds
+presolving:
+presolving (0 rounds: 0 fast, 0 medium, 0 exhaustive):
+ 0 deleted vars, 0 deleted constraints, 0 added constraints, 0 tightened bounds, 0 added holes, 0 changed sides, 0 changed coefficients
+ 0 implications, 0 cliques
+presolved problem has 201 variables (201 bin, 0 int, 0 impl, 0 cont) and 133 constraints
+    133 constraints of type <linear>
+transformed objective value is always integral (scale: 5)
+Presolving Time: 0.00
+
+ time | node  | left  |LP iter|LP it/n|mem/heur|mdpt |vars |cons |rows |cuts |sepa|confs|strbr|  dualbound   | primalbound  |  gap   | compl. 
+  0.0s|     1 |     0 |    67 |     - |  1902k |   0 | 201 | 133 | 133 |   0 |  0 |   0 |   0 | 6.875000e+03 |      --      |    Inf | unknown
+  0.1s|     1 |     2 |    67 |     - |  1904k |   0 | 201 | 133 | 133 |   0 |  1 |   0 |   0 | 6.875000e+03 |      --      |    Inf | unknown
+------------
+Best Solution found (1) :
+	feasible with solution value 8655
+------------
+Leaf node cutoff (2) (scip node #134) (Status: 2/false):
+C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 >= 1 -C1148 >= 1 -C1166 >= 1 -C1004 >= 1 -C1184 >= 1 -C1012 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 49 rows, 82 columns, 996 nonzeros, 0 col bounds, 35 row bounds
+Reduced LP has 84 rows 119 columns 927 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.78e+02 |       33 | 2.36000000e+03
+  L  |    0.0 |      63 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.68416667e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.68416667e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.68416667e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 63
+Objective value     : 8.68416667e+03
+
+	recalculating verified by Neumaier
+* 0.3s|    68 |    66 |  1124 |  15.8 |    LP  |  11 | 201 | 133 | 133 |   0 |  1 |   0 |   0 | 6.965000e+03 | 8.655000e+03 |  24.26%| unknown
+------------
+node feasible (3) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 >= 1 -C1148 >= 1 -C1166 >= 1 -C1004 >= 1 -C1184 >= 1 -C1012 >= 1 -
+	verified after factorization with solution value 8655
+  0.4s|   100 |    98 |  1773 |  17.2 |  1966k |  11 | 201 | 133 | 133 |   0 |  1 |   0 |   0 | 7.065000e+03 | 8.655000e+03 |  22.51%| unknown
+------------
+Best Solution found (6) :
+	feasible with solution value 7775
+------------
+Leaf node cutoff (7) (scip node #146) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 >= 1 -C1121 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 25 rows, 51 columns, 699 nonzeros, 0 col bounds, 16 row bounds
+Reduced LP has 108 rows 150 columns 1224 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.12e+02 |       42 | 1.45000000e+03
+  L  |    0.0 |      87 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 87
+Objective value     : 7.77500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (8) (scip node #57) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 34 rows, 66 columns, 859 nonzeros, 0 col bounds, 24 row bounds
+Reduced LP has 99 rows 135 columns 1064 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.71e+02 |       40 | 2.05000000e+03
+  L  |    0.0 |      59 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.21500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.21500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.21500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 59
+Objective value     : 8.21500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (9) (scip node #278) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 >= 1 -C1178 <= 0 -C1171 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 35 rows, 80 columns, 794 nonzeros, 0 col bounds, 17 row bounds
+Reduced LP has 98 rows 121 columns 1129 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.53e+02 |       44 | 2.24000000e+03
+  L  |    0.0 |      46 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 46
+Objective value     : 7.77500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (10) (scip node #35) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 >= 1 -C1076 >= 1 -C1094 >= 1 -C1112 >= 1 -C1130 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 43 rows, 72 columns, 981 nonzeros, 0 col bounds, 31 row bounds
+Reduced LP has 90 rows 129 columns 942 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.62e+02 |       34 | 2.25000000e+03
+  L  |    0.0 |      69 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.43416667e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.43416667e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.43416667e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 69
+Objective value     : 8.43416667e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (11) (scip node #128) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 >= 1 -C1148 >= 1 -C1166 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 33 rows, 68 columns, 757 nonzeros, 0 col bounds, 19 row bounds
+Reduced LP has 100 rows 133 columns 1166 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.24e+02 |       42 | 1.81000000e+03
+  L  |    0.0 |      67 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.08500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.08500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.08500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 67
+Objective value     : 8.08500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (12) (scip node #66) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 >= 1 -C1157 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 38 rows, 69 columns, 959 nonzeros, 0 col bounds, 27 row bounds
+Reduced LP has 95 rows 132 columns 964 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.51e+02 |       37 | 1.80000000e+03
+  L  |    0.0 |      58 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.27500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.27500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.27500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 58
+Objective value     : 8.27500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (13) (scip node #130) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 >= 1 -C1148 >= 1 -C1166 >= 1 -C1004 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 40 rows, 77 columns, 875 nonzeros, 0 col bounds, 25 row bounds
+Reduced LP has 93 rows 124 columns 1048 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.09e+02 |       39 | 1.91000000e+03
+  L  |    0.0 |      82 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.33500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.33500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.33500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 82
+Objective value     : 8.33500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (14) (scip node #264) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 >= 1 -C1103 <= 0 -C1139 >= 1 -C1160 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 24 rows, 61 columns, 700 nonzeros, 0 col bounds, 12 row bounds
+Reduced LP has 109 rows 140 columns 1223 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.48e+02 |       46 | 1.25000000e+03
+  L  |    0.0 |      66 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.89500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.89500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.89500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 66
+Objective value     : 7.89500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (15) (scip node #64) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 31 rows, 60 columns, 815 nonzeros, 0 col bounds, 21 row bounds
+Reduced LP has 102 rows 141 columns 1108 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.74e+02 |       40 | 1.60000000e+03
+  L  |    0.0 |      69 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.02500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.02500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.02500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 69
+Objective value     : 8.02500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (16) (scip node #56) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 <= 0 -
+------------
+Leaf node cutoff (18) (scip node #254) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 >= 1 -C1175 >= 1 -C1193 <= 0 -C1012 <= 0 -C1025 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 38 rows, 67 columns, 904 nonzeros, 0 col bounds, 28 row bounds
+Reduced LP has 95 rows 134 columns 1019 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.91e+02 |       37 | 1.60000000e+03
+  L  |    0.0 |      63 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.83633333e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.83633333e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.83633333e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 63
+Objective value     : 7.83633333e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (19) (scip node #90) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 >= 1 -C1148 >= 1 -C1166 >= 1 -C1184 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 21 rows, 53 columns, 433 nonzeros, 0 col bounds, 15 row bounds
+Reduced LP has 112 rows 148 columns 1490 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 8.29e+02 |       47 | 7.00000000e+02
+  L  |    0.0 |      89 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.27500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.27500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.27500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 89
+Objective value     : 8.27500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (20) (scip node #44) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 28 rows, 51 columns, 740 nonzeros, 0 col bounds, 22 row bounds
+Reduced LP has 105 rows 150 columns 1183 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.14e+02 |       40 | 1.50000000e+03
+  L  |    0.0 |      62 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.21500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.21500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.21500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 62
+Objective value     : 8.21500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (21) (scip node #253) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 >= 1 -C1175 >= 1 -C1193 <= 0 -C1012 >= 1 -C1085 >= 1 -C1011 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 47 rows, 81 columns, 1040 nonzeros, 0 col bounds, 36 row bounds
+Reduced LP has 86 rows 120 columns 883 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.28e+02 |       32 | 2.75000000e+03
+  L  |    0.0 |      54 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.30500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.30500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.30500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 54
+Objective value     : 8.30500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (22) (scip node #94) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 >= 1 -C1148 >= 1 -C1166 >= 1 -C1184 >= 1 -C1011 >= 1 -C1025 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 26 rows, 57 columns, 512 nonzeros, 0 col bounds, 21 row bounds
+Reduced LP has 107 rows 144 columns 1411 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.34e+02 |       44 | 1.15000000e+03
+  L  |    0.0 |      84 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.49500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.49500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.49500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 84
+Objective value     : 8.49500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (23) (scip node #252) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 >= 1 -C1175 >= 1 -C1193 <= 0 -C1012 >= 1 -C1085 >= 1 -C1011 <= 0 -
+------------
+Leaf node cutoff (25) (scip node #120) (Status: 4/true):
+C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 >= 1 -C1130 >= 1 -C1148 >= 1 -C1166 >= 1 -C1187 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 48 rows, 82 columns, 1014 nonzeros, 0 col bounds, 33 row bounds
+Reduced LP has 85 rows 119 columns 909 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.85e+02 |       34 | 2.11000000e+03
+  L  |    0.0 |      53 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.58500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.58500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.58500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 53
+Objective value     : 8.58500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (26) (scip node #95) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 >= 1 -C1148 >= 1 -C1166 >= 1 -C1184 >= 1 -C1011 >= 1 -C1025 >= 1 -
+------------
+Leaf node cutoff (28) (scip node #116) (Status: 4/true):
+C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 >= 1 -C1130 >= 1 -C1148 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 36 rows, 64 columns, 842 nonzeros, 0 col bounds, 23 row bounds
+Reduced LP has 97 rows 137 columns 1081 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.16e+02 |       38 | 1.86000000e+03
+  L  |    0.0 |      61 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.08500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.08500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.08500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 61
+Objective value     : 8.08500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (29) (scip node #234) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1124 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 38 rows, 64 columns, 940 nonzeros, 0 col bounds, 30 row bounds
+Reduced LP has 95 rows 137 columns 983 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.30e+02 |       35 | 2.20000000e+03
+  L  |    0.0 |      59 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.15500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.15500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.15500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 59
+Objective value     : 8.15500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (30) (scip node #235) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1124 >= 1 -
+------------
+Leaf node cutoff (32) (scip node #232) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 30 rows, 50 columns, 771 nonzeros, 0 col bounds, 23 row bounds
+Reduced LP has 103 rows 151 columns 1152 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.53e+02 |       38 | 1.90000000e+03
+  L  |    0.0 |      81 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.90500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.90500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.90500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 81
+Objective value     : 7.90500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (34) (scip node #170) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 >= 1 -C1076 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 18 rows, 43 columns, 583 nonzeros, 0 col bounds, 10 row bounds
+Reduced LP has 115 rows 158 columns 1340 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.75e+02 |       45 | 1.10000000e+03
+  L  |    0.0 |      92 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.85500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.85500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.85500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 92
+Objective value     : 7.85500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (35) (scip node #118) (Status: 4/true):
+C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 >= 1 -C1130 >= 1 -C1148 >= 1 -C1166 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 43 rows, 73 columns, 976 nonzeros, 0 col bounds, 29 row bounds
+Reduced LP has 90 rows 128 columns 947 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.93e+02 |       35 | 2.01000000e+03
+  L  |    0.0 |      71 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.33500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.33500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.33500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 71
+Objective value     : 8.33500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (36) (scip node #122) (Status: 4/true):
+C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 >= 1 -C1130 >= 1 -C1148 >= 1 -C1166 >= 1 -C1187 >= 1 -C1012 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 51 rows, 85 columns, 1025 nonzeros, 0 col bounds, 37 row bounds
+Reduced LP has 82 rows 116 columns 898 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.67e+02 |       33 | 2.22000000e+03
+  L  |    0.0 |      47 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.61500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.61500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.61500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 47
+Objective value     : 8.61500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (37) (scip node #214) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 >= 1 -C1076 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 18 rows, 43 columns, 583 nonzeros, 0 col bounds, 10 row bounds
+Reduced LP has 115 rows 158 columns 1340 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 8.15e+02 |       45 | 9.00000000e+02
+  L  |    0.0 |      98 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.85500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.85500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.85500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 98
+Objective value     : 7.85500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (38) (scip node #215) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 >= 1 -C1076 >= 1 -
+------------
+Leaf node cutoff (40) (scip node #34) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 >= 1 -C1076 >= 1 -C1094 >= 1 -C1112 >= 1 -C1130 <= 0 -
+------------
+Leaf node cutoff (42) (scip node #104) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 36 rows, 68 columns, 892 nonzeros, 0 col bounds, 25 row bounds
+Reduced LP has 97 rows 133 columns 1031 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.06e+02 |       39 | 2.00000000e+03
+  L  |    0.0 |      63 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.30900000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.30900000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.30900000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 63
+Objective value     : 8.30900000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (43) (scip node #81) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 >= 1 -C1175 >= 1 -C1193 >= 1 -C1012 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 40 rows, 68 columns, 898 nonzeros, 0 col bounds, 31 row bounds
+Reduced LP has 93 rows 133 columns 1025 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.83e+02 |       36 | 1.65000000e+03
+  L  |    0.0 |      63 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.99500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.99500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.99500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 63
+Objective value     : 7.99500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (44) (scip node #199) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 >= 1 -C1085 <= 0 -C1104 >= 1 -C1124 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 35 rows, 59 columns, 845 nonzeros, 0 col bounds, 24 row bounds
+Reduced LP has 98 rows 142 columns 1078 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.75e+02 |       37 | 2.32000000e+03
+  L  |    0.0 |      65 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 65
+Objective value     : 7.77500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (45) (scip node #194) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 >= 1 -C1076 <= 0 -C1112 >= 1 -C1133 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 32 rows, 59 columns, 824 nonzeros, 0 col bounds, 19 row bounds
+Reduced LP has 101 rows 142 columns 1099 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.09e+02 |       39 | 1.60000000e+03
+  L  |    0.0 |      75 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.02500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.02500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.02500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 75
+Objective value     : 8.02500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (46) (scip node #195) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 >= 1 -C1076 <= 0 -C1112 >= 1 -C1133 >= 1 -
+------------
+Leaf node cutoff (48) (scip node #190) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 >= 1 -C1017 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 23 rows, 51 columns, 655 nonzeros, 0 col bounds, 14 row bounds
+Reduced LP has 110 rows 150 columns 1268 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.90e+02 |       44 | 1.56000000e+03
+  L  |    0.0 |      85 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.90750000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.90750000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.90750000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 85
+Objective value     : 7.90750000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (49) (scip node #191) (Status: 4/true):
+	cutoff leaf already registered C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 >= 1 -C1017 >= 1 -
+------------
+Leaf node cutoff (51) (scip node #92) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 >= 1 -C1148 >= 1 -C1166 >= 1 -C1184 >= 1 -C1011 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 25 rows, 56 columns, 492 nonzeros, 0 col bounds, 20 row bounds
+Reduced LP has 108 rows 145 columns 1431 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 8.11e+02 |       45 | 7.50000000e+02
+  L  |    0.0 |     114 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.49500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.49500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.49500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 114
+Objective value     : 8.49500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (54) (scip node #109) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 >= 1 -C1016 >= 1 -C1160 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 43 rows, 78 columns, 1039 nonzeros, 0 col bounds, 31 row bounds
+Reduced LP has 90 rows 123 columns 884 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.71e+02 |       36 | 2.50000000e+03
+  L  |    0.0 |      75 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.55900000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.55900000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.55900000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 75
+Objective value     : 8.55900000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (55) (scip node #132) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 >= 1 -C1148 >= 1 -C1166 >= 1 -C1004 >= 1 -C1184 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 45 rows, 78 columns, 972 nonzeros, 0 col bounds, 30 row bounds
+Reduced LP has 88 rows 123 columns 951 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.86e+02 |       34 | 2.31000000e+03
+  L  |    0.0 |      62 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.43500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.43500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.43500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 62
+Objective value     : 8.43500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (59) (scip node #69) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 >= 1 -C1157 >= 1 -C1015 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 43 rows, 78 columns, 1009 nonzeros, 0 col bounds, 31 row bounds
+Reduced LP has 90 rows 123 columns 914 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.43e+02 |       36 | 1.95000000e+03
+  L  |    0.0 |      71 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.56375000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.56375000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.56375000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 71
+Objective value     : 8.56375000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (60) (scip node #171) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 >= 1 -C1076 >= 1 -
+------------
+Leaf node cutoff (62) (scip node #265) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 >= 1 -C1103 <= 0 -C1139 >= 1 -C1160 >= 1 -
+------------
+Leaf node cutoff (64) (scip node #68) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 >= 1 -C1157 >= 1 -C1015 <= 0 -
+------------
+Leaf node cutoff (68) (scip node #106) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 >= 1 -C1016 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 43 rows, 77 columns, 1028 nonzeros, 0 col bounds, 31 row bounds
+Reduced LP has 90 rows 124 columns 895 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.91e+02 |       36 | 2.20000000e+03
+  L  |    0.0 |      70 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.55900000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.55900000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.55900000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.00
+Iterations          : 70
+Objective value     : 8.55900000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (69) (scip node #100) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 >= 1 -C1085 >= 1 -C1103 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 22 rows, 50 columns, 638 nonzeros, 0 col bounds, 13 row bounds
+Reduced LP has 111 rows 151 columns 1285 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.96e+02 |       45 | 1.45000000e+03
+  L  |    0.0 |      84 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.80900000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.80900000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.80900000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 84
+Objective value     : 7.80900000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (70) (scip node #108) (Status: 4/true):
+	cutoff leaf already registered C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -C1139 >= 1 -C1016 >= 1 -C1160 <= 0 -
+------------
+Leaf node cutoff (74) (scip node #123) (Status: 4/true):
+	cutoff leaf already registered C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 >= 1 -C1130 >= 1 -C1148 >= 1 -C1166 >= 1 -C1187 >= 1 -C1012 >= 1 -
+------------
+Leaf node cutoff (79) (scip node #102) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 29 rows, 59 columns, 762 nonzeros, 0 col bounds, 19 row bounds
+Reduced LP has 104 rows 142 columns 1161 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.41e+02 |       42 | 1.75000000e+03
+  L  |    0.0 |      67 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.05900000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.05900000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.05900000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 67
+Objective value     : 8.05900000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (82) (scip node #45) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 >= 1 -
+------------
+Leaf node cutoff (84) (scip node #147) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 >= 1 -C1121 >= 1 -
+------------
+Leaf node cutoff (86) (scip node #256) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 >= 1 -C1175 >= 1 -C1193 <= 0 -C1012 <= 0 -C1025 >= 1 -C1017 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 47 rows, 81 columns, 1058 nonzeros, 0 col bounds, 33 row bounds
+Reduced LP has 86 rows 120 columns 865 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.88e+02 |       34 | 2.16000000e+03
+  L  |    0.0 |      53 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.96500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.96500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.96500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 53
+Objective value     : 7.96500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (87) (scip node #226) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 >= 1 -C1124 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 25 rows, 51 columns, 699 nonzeros, 0 col bounds, 16 row bounds
+Reduced LP has 108 rows 150 columns 1224 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.52e+02 |       42 | 1.25000000e+03
+  L  |    0.0 |      89 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 89
+Objective value     : 7.77500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (88) (scip node #227) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 >= 1 -C1124 >= 1 -
+------------
+Leaf node cutoff (90) (scip node #257) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 >= 1 -C1175 >= 1 -C1193 <= 0 -C1012 <= 0 -C1025 >= 1 -C1017 >= 1 -
+------------
+Leaf node cutoff (93) (scip node #198) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 >= 1 -C1085 <= 0 -C1104 >= 1 -C1124 <= 0 -
+------------
+Leaf node cutoff (95) (scip node #88) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 >= 1 -C1148 >= 1 -C1166 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 16 rows, 44 columns, 391 nonzeros, 0 col bounds, 11 row bounds
+Reduced LP has 117 rows 157 columns 1532 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 8.57e+02 |       48 | 6.00000000e+02
+  L  |    0.0 |      76 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.02500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.02500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.02500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 76
+Objective value     : 8.02500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (97) (scip node #42) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 21 rows, 42 columns, 592 nonzeros, 0 col bounds, 16 row bounds
+Reduced LP has 112 rows 159 columns 1331 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.57e+02 |       43 | 1.20000000e+03
+  L  |    0.0 |      76 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.96500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.96500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.96500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 76
+Objective value     : 7.96500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (99) (scip node #32) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 >= 1 -C1076 >= 1 -C1094 >= 1 -C1112 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 38 rows, 63 columns, 919 nonzeros, 0 col bounds, 27 row bounds
+Reduced LP has 95 rows 138 columns 1004 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.70e+02 |       35 | 2.00000000e+03
+  L  |    0.0 |      61 |     4 | 0.00e+00 | 0.00e+00 |        0 | 8.15500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.15500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 8.15500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 61
+Objective value     : 8.15500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (101) (scip node #280) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 >= 1 -C1178 <= 0 -C1171 >= 1 -C1002 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 41 rows, 95 columns, 878 nonzeros, 0 col bounds, 20 row bounds
+Reduced LP has 92 rows 106 columns 1045 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.33e+02 |       44 | 2.44000000e+03
+  L  |    0.0 |      31 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.87500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.87500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.87500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 31
+Objective value     : 7.87500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (102) (scip node #281) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 >= 1 -C1178 <= 0 -C1171 >= 1 -C1002 >= 1 -
+------------
+Leaf node cutoff (105) (scip node #62) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 >= 1 -C1103 >= 1 -C1121 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 24 rows, 51 columns, 677 nonzeros, 0 col bounds, 15 row bounds
+Reduced LP has 109 rows 150 columns 1246 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.17e+02 |       43 | 1.35000000e+03
+  L  |    0.0 |      75 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 75
+Objective value     : 7.77500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (107) (scip node #114) (Status: 4/true):
+C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 >= 1 -C1130 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 29 rows, 55 columns, 714 nonzeros, 0 col bounds, 17 row bounds
+Reduced LP has 104 rows 146 columns 1209 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.59e+02 |       41 | 1.66000000e+03
+  L  |    0.0 |      74 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.83500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.83500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.83500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 74
+Objective value     : 7.83500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (109) (scip node #80) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 >= 1 -C1175 >= 1 -C1193 >= 1 -C1012 <= 0 -
+------------
+Leaf node cutoff (111) (scip node #86) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 >= 1 -C1148 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 11 rows, 35 columns, 334 nonzeros, 0 col bounds, 7 row bounds
+Reduced LP has 122 rows 166 columns 1589 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 8.95e+02 |       49 | 4.50000000e+02
+  L  |    0.0 |     105 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.77500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 105
+Objective value     : 7.77500000e+03
+
+	recalculating floating-point failed 7775 !>= 7775
+7775 7775
+	factorize is successful
+------------
+Leaf node cutoff (113) (scip node #250) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 >= 1 -C1175 >= 1 -C1193 <= 0 -C1012 >= 1 -C1085 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 40 rows, 67 columns, 925 nonzeros, 0 col bounds, 30 row bounds
+Reduced LP has 93 rows 134 columns 998 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.49e+02 |       34 | 2.40000000e+03
+  L  |    0.0 |      52 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.85100000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.85100000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.85100000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 52
+Objective value     : 7.85100000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (117) (scip node #30) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 >= 1 -C1076 >= 1 -C1094 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 30 rows, 49 columns, 752 nonzeros, 0 col bounds, 20 row bounds
+Reduced LP has 103 rows 152 columns 1171 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.93e+02 |       38 | 1.70000000e+03
+  L  |    0.0 |      72 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.90500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.90500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.90500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 72
+Objective value     : 7.90500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (119) (scip node #54) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 >= 1 -C1121 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 27 rows, 57 columns, 729 nonzeros, 0 col bounds, 18 row bounds
+Reduced LP has 106 rows 144 columns 1194 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.14e+02 |       43 | 1.80000000e+03
+  L  |    0.0 |      65 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.96500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.96500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.96500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 65
+Objective value     : 7.96500000e+03
+
+	recalculating verified by solving SoPlex
+* 1.3s|   146 |    76 |  2469 |  16.6 |    LP  |  15 | 201 | 133 | 133 |   0 |  1 |   0 |   0 | 7.105000e+03 | 7.775000e+03 |   9.43%|  13.29%
+------------
+node feasible (121) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 >= 1 -C1002 <= 0 -C1003 >= 1 -C1004 >= 1 -
+	verified after factorization with solution value 7775
+------------
+node objlimit (123) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 >= 1 -C1002 <= 0 -C1003 <= 0 -C1005 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (125) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 >= 1 -C1002 <= 0 -C1003 <= 0 -C1005 <= 0 -C1032 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (127) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 >= 1 -C1002 <= 0 -C1003 >= 1 -C1004 <= 0 -C1005 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (129) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 >= 1 -C1002 <= 0 -C1003 >= 1 -C1004 <= 0 -C1005 <= 0 -C1032 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+Best Solution found (131) :
+	feasible with solution value 7675
+------------
+Leaf node cutoff (132) (scip node #211) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 >= 1 -C1076 >= 1 -C1112 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 31 rows, 51 columns, 743 nonzeros, 0 col bounds, 24 row bounds
+Reduced LP has 102 rows 150 columns 1180 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 5.78e+02 |       37 | 2.26000000e+03
+  L  |    0.0 |      82 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.76500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.76500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.76500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 82
+Objective value     : 7.76500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (133) (scip node #231) (Status: 4/true):
+C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 <= 0 -C1076 >= 1 -C1097 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 29 rows, 50 columns, 699 nonzeros, 0 col bounds, 19 row bounds
+Reduced LP has 104 rows 151 columns 1224 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.38e+02 |       39 | 1.76000000e+03
+  L  |    0.0 |      90 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.75700000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.75700000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.75700000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 90
+Objective value     : 7.75700000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (134) (scip node #76) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 >= 1 -C1175 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 30 rows, 56 columns, 757 nonzeros, 0 col bounds, 21 row bounds
+Reduced LP has 103 rows 145 columns 1166 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.14e+02 |       40 | 1.50000000e+03
+  L  |    0.0 |      83 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.75500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.75500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.75500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 83
+Objective value     : 7.75500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (136) (scip node #268) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 <= 0 -C1107 >= 1 -C1122 <= 0 -C1130 >= 1 -C1166 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 31 rows, 76 columns, 827 nonzeros, 0 col bounds, 15 row bounds
+Reduced LP has 102 rows 125 columns 1096 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.77e+02 |       46 | 2.06000000e+03
+  L  |    0.0 |      54 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.72500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.72500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.72500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 54
+Objective value     : 7.72500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (137) (scip node #277) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 >= 1 -C1178 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 34 rows, 76 columns, 776 nonzeros, 0 col bounds, 17 row bounds
+Reduced LP has 99 rows 125 columns 1147 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.53e+02 |       44 | 2.24000000e+03
+  L  |    0.0 |      42 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.70500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.70500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.70500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 42
+Objective value     : 7.70500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (139) (scip node #167) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 <= 0 -C1076 >= 1 -C1112 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 31 rows, 51 columns, 743 nonzeros, 0 col bounds, 24 row bounds
+Reduced LP has 102 rows 150 columns 1180 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.10e+02 |       37 | 2.06000000e+03
+  L  |    0.0 |     111 |     5 | 0.00e+00 | 0.00e+00 |        0 | 7.76500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.76500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.76500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 111
+Objective value     : 7.76500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (140) (scip node #230) (Status: 4/true):
+	cutoff leaf already registered C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 <= 0 -C1076 >= 1 -C1097 <= 0 -
+------------
+Leaf node cutoff (142) (scip node #192) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 >= 1 -C1076 <= 0 -C1112 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 24 rows, 44 columns, 632 nonzeros, 0 col bounds, 14 row bounds
+Reduced LP has 109 rows 157 columns 1291 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.36e+02 |       41 | 1.35000000e+03
+  L  |    0.0 |      87 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.70500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.70500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.70500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 87
+Objective value     : 7.70500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (145) (scip node #166) (Status: 4/true):
+	cutoff leaf already registered C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 <= 0 -C1076 >= 1 -C1112 <= 0 -
+------------
+Leaf node cutoff (147) (scip node #196) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 >= 1 -C1085 <= 0 -C1104 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 24 rows, 45 columns, 649 nonzeros, 0 col bounds, 17 row bounds
+Reduced LP has 109 rows 156 columns 1274 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.96e+02 |       41 | 1.55000000e+03
+  L  |    0.0 |      99 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.70500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.70500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.70500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 99
+Objective value     : 7.70500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (150) (scip node #269) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 <= 0 -C1107 >= 1 -C1122 <= 0 -C1130 >= 1 -C1166 >= 1 -
+------------
+Leaf node cutoff (152) (scip node #210) (Status: 4/true):
+	cutoff leaf already registered C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 >= 1 -C1076 >= 1 -C1112 <= 0 -
+------------
+Leaf node cutoff (154) (scip node #52) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 >= 1 -C1103 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 20 rows, 48 columns, 605 nonzeros, 0 col bounds, 12 row bounds
+Reduced LP has 113 rows 153 columns 1318 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.77e+02 |       46 | 1.50000000e+03
+  L  |    0.0 |      82 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.71500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.71500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.71500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 82
+Objective value     : 7.71500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (156) (scip node #300) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 >= 1 -C1002 <= 0 -C1003 >= 1 -C1004 <= 0 -C1005 <= 0 -C1032 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 32 rows, 82 columns, 815 nonzeros, 0 col bounds, 16 row bounds
+Reduced LP has 101 rows 119 columns 1108 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.87e+02 |       46 | 2.13000000e+03
+  L  |    0.0 |      53 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.73500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.73500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.73500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 53
+Objective value     : 7.73500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (160) (scip node #40) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 >= 1 -C1085 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 14 rows, 33 columns, 450 nonzeros, 0 col bounds, 10 row bounds
+Reduced LP has 119 rows 168 columns 1473 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 8.20e+02 |       46 | 8.50000000e+02
+  L  |    0.0 |      95 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.71500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.71500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.71500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 95
+Objective value     : 7.71500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (162) (scip node #292) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 >= 1 -C1002 <= 0 -C1003 <= 0 -C1005 <= 0 -C1032 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 32 rows, 81 columns, 805 nonzeros, 0 col bounds, 16 row bounds
+Reduced LP has 101 rows 120 columns 1118 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.27e+02 |       46 | 1.93000000e+03
+  L  |    0.0 |      51 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.68700000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.68700000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.68700000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 51
+Objective value     : 7.68700000e+03
+
+	recalculating verified by solving SoPlex
+* 1.5s|   157 |    61 |  2569 |  16.0 |    LP  |  17 | 201 | 133 | 133 |   0 |  1 |   0 |   0 | 7.105000e+03 | 7.675000e+03 |   8.02%|  17.19%
+------------
+node feasible (166) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 >= 1 -C1002 >= 1 -
+	verified after factorization with solution value 7675
+------------
+node objlimit (169) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 <= 0 -C1166 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (171) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 >= 1 -C1148 <= 0 -C1133 >= 1 -C1149 <= 0 -C1167 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (173) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 >= 1 -C1148 <= 0 -C1133 >= 1 -C1149 <= 0 -C1167 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (176) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 <= 0 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (178) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (180) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 >= 1 -C1103 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (182) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 <= 0 -C1178 >= 1 -C1002 <= 0 -C1003 >= 1 -C1004 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (184) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 <= 0 -C1178 >= 1 -C1002 <= 0 -C1003 <= 0 -C1005 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (186) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 <= 0 -C1178 >= 1 -C1002 <= 0 -C1003 >= 1 -C1004 <= 0 -C1005 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+Best Solution found (188) :
+	feasible with solution value 7615
+------------
+Leaf node cutoff (189) (scip node #302) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 <= 0 -C1158 <= 0 -C1176 <= 0 -C1166 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 25 rows, 64 columns, 695 nonzeros, 0 col bounds, 12 row bounds
+Reduced LP has 108 rows 137 columns 1228 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.39e+02 |       46 | 1.77000000e+03
+  L  |    0.0 |      62 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.65000000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.65000000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.65000000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 62
+Objective value     : 7.65000000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (193) (scip node #329) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 >= 1 -C1148 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 23 rows, 53 columns, 641 nonzeros, 0 col bounds, 14 row bounds
+Reduced LP has 110 rows 148 columns 1282 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.67e+02 |       44 | 1.15000000e+03
+  L  |    0.0 |      87 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.64750000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.64750000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.64750000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 87
+Objective value     : 7.64750000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (194) (scip node #325) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 >= 1 -C1005 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 7 rows, 38 columns, 379 nonzeros, 0 col bounds, 3 row bounds
+Reduced LP has 126 rows 163 columns 1544 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 9.43e+02 |       50 | 2.50000000e+02
+  L  |    0.0 |     122 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.66000000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.66000000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.66000000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 122
+Objective value     : 7.66000000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (195) (scip node #316) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 >= 1 -C1121 <= 0 -C1160 >= 1 -C1076 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 28 rows, 62 columns, 699 nonzeros, 0 col bounds, 18 row bounds
+Reduced LP has 105 rows 139 columns 1224 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.29e+02 |       43 | 1.36000000e+03
+  L  |    0.0 |      67 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.61666667e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.61666667e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.61666667e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 67
+Objective value     : 7.61666667e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (196) (scip node #320) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 >= 1 -C1080 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 7 rows, 37 columns, 353 nonzeros, 0 col bounds, 3 row bounds
+Reduced LP has 126 rows 164 columns 1570 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 9.53e+02 |       50 | 2.00000000e+02
+  L  |    0.0 |     125 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.63000000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.63000000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.63000000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 125
+Objective value     : 7.63000000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (197) (scip node #321) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 >= 1 -C1080 >= 1 -
+------------
+Leaf node cutoff (199) (scip node #317) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 >= 1 -C1121 <= 0 -C1160 >= 1 -C1076 >= 1 -
+------------
+Leaf node cutoff (201) (scip node #324) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 >= 1 -C1005 <= 0 -
+------------
+Leaf node cutoff (203) (scip node #219) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 >= 1 -C1068 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 14 rows, 43 columns, 496 nonzeros, 0 col bounds, 7 row bounds
+Reduced LP has 119 rows 158 columns 1427 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 8.85e+02 |       48 | 1.00000000e+03
+  L  |    0.0 |      99 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.63500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.63500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.63500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 99
+Objective value     : 7.63500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (204) (scip node #183) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 >= 1 -C1015 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 7 rows, 32 columns, 374 nonzeros, 0 col bounds, 3 row bounds
+Reduced LP has 126 rows 169 columns 1549 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 9.13e+02 |       50 | 4.00000000e+02
+  L  |    0.0 |     102 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.62000000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.62000000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.62000000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 102
+Objective value     : 7.62000000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (205) (scip node #328) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 >= 1 -C1148 <= 0 -
+------------
+Leaf node cutoff (207) (scip node #297) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 >= 1 -C1121 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 6 rows, 33 columns, 327 nonzeros, 0 col bounds, 3 row bounds
+Reduced LP has 127 rows 168 columns 1596 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 9.53e+02 |       50 | 2.00000000e+02
+  L  |    0.0 |     115 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.61500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.61500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.61500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.03
+Iterations          : 115
+Objective value     : 7.61500000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (208) (scip node #296) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 >= 1 -C1121 <= 0 -
+------------
+Leaf node cutoff (210) (scip node #355) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 <= 0 -C1178 >= 1 -C1002 <= 0 -C1003 <= 0 -C1005 <= 0 -C1035 >= 1 -C1015 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 41 rows, 94 columns, 977 nonzeros, 0 col bounds, 21 row bounds
+Reduced LP has 92 rows 107 columns 946 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.64e+02 |       43 | 2.17000000e+03
+  L  |    0.0 |      48 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.63750000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.63750000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.63750000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 48
+Objective value     : 7.63750000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (211) (scip node #74) (Status: 4/true):
+C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 >= 1 -C1157 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 23 rows, 41 columns, 613 nonzeros, 0 col bounds, 17 row bounds
+Reduced LP has 110 rows 160 columns 1310 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.36e+02 |       41 | 1.35000000e+03
+  L  |    0.0 |     106 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.65500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.65500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.65500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 106
+Objective value     : 7.65500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (213) (scip node #239) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 >= 1 -C1148 <= 0 -C1133 >= 1 -C1149 >= 1 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 27 rows, 59 columns, 667 nonzeros, 0 col bounds, 17 row bounds
+Reduced LP has 106 rows 142 columns 1256 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 6.58e+02 |       44 | 1.72000000e+03
+  L  |    0.0 |      92 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.63500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.63500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.63500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 92
+Objective value     : 7.63500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (215) (scip node #218) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 >= 1 -C1068 <= 0 -
+------------
+Leaf node cutoff (217) (scip node #236) (Status: 4/true):
+C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 >= 1 -C1148 <= 0 -C1133 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 22 rows, 51 columns, 608 nonzeros, 0 col bounds, 13 row bounds
+Reduced LP has 111 rows 150 columns 1315 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.06e+02 |       45 | 1.46000000e+03
+  L  |    0.0 |      84 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.62500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.62500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.62500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 84
+Objective value     : 7.62500000e+03
+
+	recalculating verified by Neumaier
+------------
+Leaf node cutoff (220) (scip node #182) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 >= 1 -C1015 <= 0 -
+------------
+Leaf node cutoff (222) (scip node #354) (Status: 4/true):
+	cutoff leaf already registered C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 <= 0 -C1178 >= 1 -C1002 <= 0 -C1003 <= 0 -C1005 <= 0 -C1035 >= 1 -C1015 <= 0 -
+------------
+Leaf node cutoff (224) (scip node #352) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 <= 0 -C1178 >= 1 -C1002 <= 0 -C1003 <= 0 -C1005 <= 0 -C1035 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 32 rows, 81 columns, 791 nonzeros, 0 col bounds, 16 row bounds
+Reduced LP has 101 rows 120 columns 1132 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.67e+02 |       46 | 1.67000000e+03
+  L  |    0.0 |      53 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.62700000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.62700000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.62700000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.01
+Iterations          : 53
+Objective value     : 7.62700000e+03
+
+	recalculating verified by solving SoPlex
+------------
+Leaf node cutoff (227) (scip node #350) (Status: 4/true):
+C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 <= 0 -C1178 >= 1 -C1002 <= 0 -C1003 >= 1 -C1004 <= 0 -C1005 <= 0 -
+Equilibrium scaling LP (persistent)
+Simplifier removed 32 rows, 81 columns, 791 nonzeros, 0 col bounds, 16 row bounds
+Reduced LP has 101 rows 120 columns 1132 nonzeros
+Equilibrium scaling LP
+type |   time |   iters | facts |    shift | viol sum | viol num | obj value 
+  L  |    0.0 |       0 |     3 | 0.00e+00 | 7.27e+02 |       46 | 1.87000000e+03
+  L  |    0.0 |      41 |     4 | 0.00e+00 | 0.00e+00 |        0 | 7.61500000e+03
+ --- unscaling internal solution
+ --- unsimplifying solution and basis
+ --- unscaling external solution
+ --- verifying computed solution
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.61500000e+03
+  L  |    0.0 |       0 |     1 | 0.00e+00 | 0.00e+00 |        0 | 7.61500000e+03
+ --- unscaling external solution
+ --- verifying computed solution
+
+SoPlex status       : problem is solved [optimal]
+Solving time (sec)  : 0.02
+Iterations          : 41
+Objective value     : 7.61500000e+03
+
+	recalculating verified by solving SoPlex
+* 1.9s|   194 |    56 |  2997 |  15.2 |    LP  |  17 | 201 | 133 | 133 |   0 |  1 |   0 |   0 | 7.145000e+03 | 7.615000e+03 |   6.58%|  21.02%
+------------
+node feasible (231) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 <= 0 -C1178 >= 1 -C1002 >= 1 -
+	verified after factorization with solution value 7615
+------------
+node objlimit (234) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 <= 0 -C1178 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (237) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (239) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (241) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 >= 1 -C1139 <= 0 -
+	verified by applying Neumaier Shcherbina
+  2.0s|   200 |    54 |  3060 |  15.0 |  2044k |  17 | 201 | 133 | 133 |   0 |  0 |   0 |   0 | 7.175000e+03 | 7.615000e+03 |   6.13%|  21.81%
+------------
+node objlimit (243) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (245) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1148 >= 1 -C1166 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (247) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1148 >= 1 -C1166 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (250) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (252) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1148 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (254) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (256) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1148 <= 0 -C1094 <= 0 -C1152 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (258) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 >= 1 -C1166 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (260) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 <= 0 -C1107 <= 0 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (262) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 <= 0 -C1107 <= 0 -C1121 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (265) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 >= 1 -C1166 <= 0 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (267) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (269) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 >= 1 -C1166 <= 0 -C1076 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (272) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 >= 1 -C1103 <= 0 -C1139 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (274) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 >= 1 -C1103 <= 0 -C1139 <= 0 -C1161 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (279) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 <= 0 -C1076 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (281) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 >= 1 -C1103 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (283) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 <= 0 -C1139 <= 0 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (285) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 <= 0 -C1139 <= 0 -C1121 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (287) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 >= 1 -C1103 <= 0 -C1139 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (289) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 >= 1 -C1103 <= 0 -C1139 <= 0 -C1161 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (293) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 <= 0 -C1076 <= 0 -C1130 <= 0 -C1152 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (295) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 >= 1 -C1103 <= 0 -C1121 >= 1 -C1139 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (297) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (299) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 >= 1 -C1103 <= 0 -C1121 <= 0 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (301) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (303) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1094 <= 0 -C1166 >= 1 -C1131 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (305) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1094 <= 0 -C1166 >= 1 -C1131 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (308) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1094 <= 0 -C1166 <= 0 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (310) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 >= 1 -C1076 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (312) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 >= 1 -C1076 <= 0 -C1130 <= 0 -C1152 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (314) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 <= 0 -C1044 <= 0 -C1152 >= 1 -C1167 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (316) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 <= 0 -C1044 <= 0 -C1152 >= 1 -C1167 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (319) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 <= 0 -C1044 <= 0 -C1152 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (322) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 >= 1 -C1094 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (324) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 >= 1 -C1094 <= 0 -C1130 <= 0 -C1148 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (326) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 >= 1 -C1094 <= 0 -C1130 <= 0 -C1148 <= 0 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (328) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 <= 0 -C1121 >= 1 -C1139 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (330) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 <= 0 -C1121 >= 1 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (333) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 <= 0 -C1121 <= 0 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (335) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 >= 1 -C1032 <= 0 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (337) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (339) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 >= 1 -C1032 <= 0 -C1121 <= 0 -C1050 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (341) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 >= 1 -C1032 <= 0 -C1121 <= 0 -C1050 <= 0 -C1033 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (343) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 >= 1 -C1032 <= 0 -C1121 <= 0 -C1050 <= 0 -C1033 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (348) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+  2.3s|   300 |    62 |  4043 |  13.3 |  2044k |  18 | 201 | 133 | 133 |   0 |  1 |   0 |   0 | 7.235000e+03 | 7.615000e+03 |   5.25%|  35.52%
+------------
+node objlimit (350) :C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 <= 0 -C1076 <= 0 -C1130 >= 1 -C1184 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (352) :C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 <= 0 -C1076 <= 0 -C1130 >= 1 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (355) :C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 <= 0 -C1076 <= 0 -C1130 <= 0 -C1131 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (357) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 <= 0 -C1044 >= 1 -C1076 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (359) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 >= 1 -C1103 <= 0 -C1121 >= 1 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (362) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 >= 1 -C1179 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (365) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (367) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 >= 1 -C1085 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (370) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (372) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 >= 1 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (374) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (376) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 <= 0 -C1107 >= 1 -C1122 >= 1 -C1139 >= 1 -C1193 >= 1 -
+	verified
+------------
+node objlimit (378) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 <= 0 -C1107 >= 1 -C1122 >= 1 -C1139 >= 1 -C1193 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (381) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 <= 0 -C1107 >= 1 -C1122 >= 1 -C1139 <= 0 -
+	verified
+------------
+node objlimit (384) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (386) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (388) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 >= 1 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (391) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 >= 1 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (393) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 >= 1 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (396) :C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 <= 0 -C1148 <= 0 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (398) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 >= 1 -C1049 <= 0 -C1085 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (400) :C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (402) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 >= 1 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (404) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 >= 1 -C1184 <= 0 -C1040 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (406) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 >= 1 -C1184 <= 0 -C1040 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (410) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (412) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (414) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 >= 1 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (416) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 >= 1 -C1121 <= 0 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (418) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 >= 1 -C1121 <= 0 -C1170 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (420) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 >= 1 -C1121 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (422) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 >= 1 -C1049 <= 0 -C1085 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (425) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 >= 1 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (428) :C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 <= 0 -C1148 >= 1 -C1166 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (430) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 >= 1 -C1121 <= 0 -C1197 >= 1 -C1076 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (432) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 >= 1 -C1166 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (435) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 >= 1 -C1166 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (438) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 >= 1 -C1121 <= 0 -C1197 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (440) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 >= 1 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (443) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 >= 1 -C1025 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (445) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 >= 1 -C1025 <= 0 -C1184 <= 0 -C1113 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (447) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 >= 1 -C1025 <= 0 -C1184 <= 0 -C1113 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (451) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 >= 1 -C1170 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (453) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 >= 1 -C1170 <= 0 -C1184 <= 0 -C1148 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (455) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 >= 1 -C1049 <= 0 -C1085 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (457) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 >= 1 -C1049 <= 0 -C1085 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (460) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (462) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 <= 0 -C1143 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (464) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 <= 0 -C1143 <= 0 -C1071 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (466) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 >= 1 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (468) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (470) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 <= 0 -C1143 <= 0 -C1071 <= 0 -C1124 >= 1 -C1157 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (472) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 >= 1 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (474) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 >= 1 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (476) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 <= 0 -C1143 <= 0 -C1071 <= 0 -C1124 <= 0 -C1125 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (478) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 <= 0 -C1143 <= 0 -C1071 <= 0 -C1124 <= 0 -C1125 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (480) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 <= 0 -C1143 <= 0 -C1071 <= 0 -C1124 >= 1 -C1157 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (483) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 >= 1 -C1103 <= 0 -
+	verified by applying Neumaier Shcherbina
+  2.6s|   400 |    46 |  5034 |  12.4 |  2077k |  21 | 201 | 133 | 133 |   0 |  0 |   0 |   0 | 7.265000e+03 | 7.615000e+03 |   4.82%|  58.29%
+------------
+node objlimit (486) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 >= 1 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (488) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 >= 1 -C1121 <= 0 -C1157 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (490) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 >= 1 -C1121 <= 0 -C1157 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (492) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (494) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (496) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (498) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (500) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (502) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 >= 1 -C1121 <= 0 -C1157 <= 0 -C1161 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (507) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 >= 1 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (509) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (511) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (513) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (515) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (517) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (519) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 >= 1 -C1121 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (521) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 >= 1 -C1121 <= 0 -C1161 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (525) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 >= 1 -C1088 <= 0 -C1001 >= 1 -C1142 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (527) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 >= 1 -C1139 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (529) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 >= 1 -C1184 <= 0 -C1148 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (531) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 >= 1 -C1184 <= 0 -C1148 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (533) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 >= 1 -C1184 <= 0 -C1148 <= 0 -C1130 <= 0 -C1061 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (535) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 >= 1 -C1148 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (537) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 >= 1 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (540) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 >= 1 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (542) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 >= 1 -C1103 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (545) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 >= 1 -C1088 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (547) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 >= 1 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (549) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 >= 1 -C1161 <= 0 -C1078 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (551) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 >= 1 -C1161 <= 0 -C1078 <= 0 -C1061 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (553) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (555) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (557) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 >= 1 -C1160 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (559) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 >= 1 -C1160 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (562) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 <= 0 -C1194 >= 1 -C1179 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (564) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 <= 0 -C1194 >= 1 -C1179 <= 0 -C1157 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (566) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 <= 0 -C1194 >= 1 -C1179 <= 0 -C1157 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (570) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 <= 0 -C1194 <= 0 -C1199 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (572) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 <= 0 -C1194 <= 0 -C1199 <= 0 -C1086 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (574) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 <= 0 -C1194 <= 0 -C1199 <= 0 -C1086 <= 0 -C1096 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (576) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (578) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 >= 1 -C1161 <= 0 -C1078 <= 0 -C1061 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (583) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 <= 0 -C1015 >= 1 -C1055 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (585) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (587) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (589) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (591) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 >= 1 -C1184 <= 0 -C1148 <= 0 -C1130 <= 0 -C1061 <= 0 -C1059 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (593) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 >= 1 -C1184 <= 0 -C1148 <= 0 -C1130 <= 0 -C1061 <= 0 -C1059 <= 0 -
+	verified by applying Neumaier Shcherbina
+  2.8s|   500 |    50 |  6089 |  12.1 |  2077k |  24 | 201 | 133 | 133 |   0 |  0 |   0 |   0 | 7.285000e+03 | 7.615000e+03 |   4.53%|  64.71%
+------------
+node objlimit (600) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (602) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (604) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (606) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (608) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 >= 1 -C1088 <= 0 -C1001 >= 1 -C1142 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (611) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 >= 1 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (613) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (615) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 >= 1 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (617) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 >= 1 -C1130 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (620) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (622) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (624) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (626) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (628) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 >= 1 -C1136 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (630) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 >= 1 -C1136 <= 0 -C1188 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (632) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (634) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 >= 1 -C1136 <= 0 -C1188 <= 0 -C1185 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (636) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 >= 1 -C1136 <= 0 -C1188 <= 0 -C1185 <= 0 -C1167 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (638) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 >= 1 -C1136 <= 0 -C1188 <= 0 -C1185 <= 0 -C1167 <= 0 -C1191 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (640) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 >= 1 -C1136 <= 0 -C1188 <= 0 -C1185 <= 0 -C1167 <= 0 -C1191 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (647) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 <= 0 -C1097 >= 1 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (649) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 <= 0 -C1097 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (651) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 <= 0 -C1064 >= 1 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (653) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 >= 1 -C1184 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (655) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 >= 1 -C1184 <= 0 -C1130 <= 0 -C1136 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (657) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 >= 1 -C1184 <= 0 -C1130 <= 0 -C1136 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (661) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 <= 0 -C1097 >= 1 -C1161 <= 0 -C1116 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (663) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 <= 0 -C1097 >= 1 -C1161 <= 0 -C1116 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (667) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 >= 1 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (670) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (672) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 <= 0 -C1097 <= 0 -C1161 <= 0 -C1100 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (674) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 <= 0 -C1097 <= 0 -C1161 <= 0 -C1100 >= 1 -C1108 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (676) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 >= 1 -C1121 <= 0 -C1160 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (680) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 >= 1 -C1113 <= 0 -C1097 <= 0 -C1161 <= 0 -C1100 >= 1 -C1108 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (687) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 <= 0 -C1064 <= 0 -C1080 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (689) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 <= 0 -C1064 <= 0 -C1080 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (691) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 <= 0 -C1064 <= 0 -C1080 <= 0 -C1161 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (695) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 >= 1 -C1032 >= 1 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (697) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 >= 1 -C1032 >= 1 -C1121 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (701) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 >= 1 -C1148 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (704) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 >= 1 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (706) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 >= 1 -C1088 <= 0 -C1001 <= 0 -C1040 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (708) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 >= 1 -C1088 <= 0 -C1001 <= 0 -C1040 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (713) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 <= 0 -C1064 >= 1 -C1161 <= 0 -C1072 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (715) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 <= 0 -C1112 <= 0 -C1085 <= 0 -C1103 <= 0 -C1184 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1134 <= 0 -C1077 <= 0 -C1064 >= 1 -C1161 <= 0 -C1072 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (729) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 >= 1 -C1170 <= 0 -C1184 <= 0 -C1148 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (733) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 <= 0 -C1194 <= 0 -C1199 <= 0 -C1086 <= 0 -C1096 <= 0 -C1120 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (735) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 >= 1 -C1193 <= 0 -C1196 <= 0 -C1194 <= 0 -C1199 <= 0 -C1086 <= 0 -C1096 <= 0 -C1120 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (744) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 >= 1 -C1059 >= 1 -C1079 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (746) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (748) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (750) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (752) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 >= 1 -C1047 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (754) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 >= 1 -C1047 <= 0 -
+	verified by applying Neumaier Shcherbina
+  3.1s|   600 |    42 |  7103 |  11.7 |  2077k |  25 | 201 | 133 | 133 |   0 |  0 |   0 |   0 | 7.375000e+03 | 7.615000e+03 |   3.25%|  74.74%
+------------
+node objlimit (757) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (759) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (761) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (763) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (765) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (767) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (769) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 >= 1 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (771) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 >= 1 -C1139 <= 0 -C1062 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (773) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 >= 1 -C1139 <= 0 -C1062 <= 0 -C1069 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (775) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 >= 1 -C1139 <= 0 -C1062 <= 0 -C1069 <= 0 -C1082 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (777) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 >= 1 -C1139 <= 0 -C1062 <= 0 -C1069 <= 0 -C1082 <= 0 -C1093 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (779) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 >= 1 -C1139 <= 0 -C1062 <= 0 -C1069 <= 0 -C1082 <= 0 -C1093 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (786) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (788) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 <= 0 -C1139 <= 0 -C1136 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (790) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 <= 0 -C1139 <= 0 -C1136 <= 0 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (792) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 <= 0 -C1139 <= 0 -C1136 <= 0 -C1170 <= 0 -C1115 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (794) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 <= 0 -C1139 <= 0 -C1136 <= 0 -C1170 <= 0 -C1115 <= 0 -C1111 >= 1 -C1166 <= 0 -C1119 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (796) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 <= 0 -C1139 <= 0 -C1136 <= 0 -C1170 <= 0 -C1115 <= 0 -C1111 >= 1 -C1166 <= 0 -C1119 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (799) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 <= 0 -C1139 <= 0 -C1136 <= 0 -C1170 <= 0 -C1115 <= 0 -C1111 >= 1 -C1166 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (802) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1148 <= 0 -C1094 <= 0 -C1152 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (804) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1148 <= 0 -C1094 <= 0 -C1152 <= 0 -C1184 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (812) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 >= 1 -C1023 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (814) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 >= 1 -C1023 <= 0 -C1024 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (816) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 >= 1 -C1023 <= 0 -C1024 <= 0 -C1042 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (818) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 >= 1 -C1023 <= 0 -C1024 <= 0 -C1042 <= 0 -C1029 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (820) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 <= 0 -C1139 <= 0 -C1121 <= 0 -C1094 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (822) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 <= 0 -C1139 <= 0 -C1121 <= 0 -C1094 <= 0 -C1161 <= 0 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (824) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 <= 0 -C1139 <= 0 -C1121 <= 0 -C1094 <= 0 -C1161 <= 0 -C1170 <= 0 -C1033 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (826) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 <= 0 -C1139 <= 0 -C1121 <= 0 -C1094 <= 0 -C1161 <= 0 -C1170 <= 0 -C1033 <= 0 -C1193 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (828) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 <= 0 -C1139 <= 0 -C1121 <= 0 -C1094 <= 0 -C1161 <= 0 -C1170 <= 0 -C1033 <= 0 -C1193 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (837) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 >= 1 -C1070 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (839) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 >= 1 -C1070 <= 0 -C1042 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (841) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 >= 1 -C1070 <= 0 -C1042 <= 0 -C1060 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (843) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 <= 0 -C1070 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (845) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 <= 0 -C1070 <= 0 -C1064 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (847) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 <= 0 -C1070 >= 1 -C1089 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (849) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 <= 0 -C1070 >= 1 -C1089 <= 0 -C1193 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (851) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 <= 0 -C1070 >= 1 -C1089 <= 0 -C1193 <= 0 -C1125 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (853) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 <= 0 -C1070 >= 1 -C1089 <= 0 -C1193 <= 0 -C1125 <= 0 -C1178 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (855) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 <= 0 -C1070 >= 1 -C1089 <= 0 -C1193 <= 0 -C1125 <= 0 -C1178 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (861) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (863) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 <= 0 -C1184 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (865) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 >= 1 -C1070 <= 0 -C1042 <= 0 -C1060 <= 0 -C1073 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (867) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 >= 1 -C1070 <= 0 -C1042 <= 0 -C1060 <= 0 -C1073 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (873) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 <= 0 -C1184 <= 0 -C1161 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (875) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 <= 0 -C1184 <= 0 -C1161 <= 0 -C1094 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (877) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 <= 0 -C1070 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (879) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 <= 0 -C1070 <= 0 -C1094 <= 0 -C1073 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (881) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 <= 0 -C1070 <= 0 -C1094 <= 0 -C1073 <= 0 -C1053 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (883) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1045 <= 0 -C1070 <= 0 -C1094 <= 0 -C1073 <= 0 -C1053 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (893) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1085 <= 0 -C1184 <= 0 -C1049 <= 0 -C1134 <= 0 -C1103 <= 0 -C1161 <= 0 -C1079 <= 0 -C1080 <= 0 -C1094 <= 0 -C1130 <= 0 -C1116 <= 0 -C1120 <= 0 -C1139 <= 0 -C1136 <= 0 -C1170 <= 0 -C1115 <= 0 -C1111 <= 0 -
+	verified by applying Neumaier Shcherbina
+  3.4s|   700 |    40 |  8131 |  11.5 |  2077k |  29 | 201 | 133 | 133 |   0 |  1 |   0 |   0 | 7.467500e+03 | 7.615000e+03 |   1.98%|  81.39%
+------------
+node objlimit (913) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 <= 0 -C1161 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (915) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 <= 0 -C1161 <= 0 -C1112 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (917) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 <= 0 -C1161 <= 0 -C1112 <= 0 -C1130 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (919) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 >= 1 -C1103 <= 0 -C1122 <= 0 -C1140 <= 0 -C1161 <= 0 -C1112 <= 0 -C1130 <= 0 -C1139 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (928) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 <= 0 -C1143 <= 0 -C1071 <= 0 -C1124 <= 0 -C1125 <= 0 -C1184 <= 0 -C1161 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (930) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 <= 0 -C1143 <= 0 -C1071 <= 0 -C1124 <= 0 -C1125 <= 0 -C1184 <= 0 -C1161 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (932) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 >= 1 -C1170 <= 0 -C1143 <= 0 -C1071 <= 0 -C1124 <= 0 -C1125 <= 0 -C1184 <= 0 -C1161 <= 0 -C1094 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (942) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1094 <= 0 -C1166 <= 0 -C1121 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (944) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1094 <= 0 -C1166 <= 0 -C1121 <= 0 -C1139 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (946) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1094 <= 0 -C1166 <= 0 -C1121 <= 0 -C1139 <= 0 -C1184 <= 0 -C1134 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (948) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 >= 1 -C1130 <= 0 -C1112 <= 0 -C1094 <= 0 -C1166 <= 0 -C1121 <= 0 -C1139 <= 0 -C1184 <= 0 -C1134 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (958) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 >= 1 -C1094 <= 0 -C1130 <= 0 -C1148 <= 0 -C1170 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (964) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 >= 1 -C1085 <= 0 -C1107 >= 1 -C1122 <= 0 -C1130 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (970) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 >= 1 -C1170 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (972) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 >= 1 -C1170 <= 0 -C1094 <= 0 -C1053 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (974) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 >= 1 -C1130 <= 0 -C1044 >= 1 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (979) :C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 <= 0 -C1076 <= 0 -C1130 <= 0 -C1131 <= 0 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (981) :C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 <= 0 -C1076 <= 0 -C1130 <= 0 -C1131 <= 0 -C1121 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (983) :C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 <= 0 -C1076 <= 0 -C1130 <= 0 -C1131 <= 0 -C1121 <= 0 -C1139 <= 0 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (985) :C1026 >= 1 -C1003 <= 0 -C1058 >= 1 -C1112 <= 0 -C1076 <= 0 -C1130 <= 0 -C1131 <= 0 -C1121 <= 0 -C1139 <= 0 -C1103 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (994) :C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 <= 0 -C1148 >= 1 -C1166 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (997) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 >= 1 -C1121 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1068 >= 1 -C1139 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (999) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 <= 0 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1001) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 <= 0 -C1121 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1003) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 <= 0 -C1121 <= 0 -C1112 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1005) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 <= 0 -C1121 <= 0 -C1112 <= 0 -C1184 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1007) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 <= 0 -C1121 <= 0 -C1112 <= 0 -C1184 <= 0 -C1139 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1016) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 <= 0 -C1070 <= 0 -C1064 <= 0 -C1073 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1018) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 <= 0 -C1070 <= 0 -C1064 <= 0 -C1073 <= 0 -C1043 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1020) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 <= 0 -C1070 <= 0 -C1064 <= 0 -C1073 <= 0 -C1043 <= 0 -C1046 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1022) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 <= 0 -C1029 <= 0 -C1070 <= 0 -C1064 <= 0 -C1073 <= 0 -C1043 <= 0 -C1046 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1030) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 <= 0 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1032) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 <= 0 -C1076 <= 0 -C1121 >= 1 -C1161 >= 1 -C1193 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1034) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 <= 0 -C1076 <= 0 -C1121 >= 1 -C1161 >= 1 -C1193 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1037) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 <= 0 -C1076 <= 0 -C1121 >= 1 -C1161 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1040) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1042) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1044) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1094 <= 0 -C1193 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1046) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1130 <= 0 -C1076 <= 0 -C1121 <= 0 -C1112 <= 0 -C1094 <= 0 -C1193 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1057) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 >= 1 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1060) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1139 <= 0 -C1130 <= 0 -C1131 <= 0 -C1052 <= 0 -C1042 >= 1 -C1170 <= 0 -C1094 <= 0 -C1053 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1073) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 <= 0 -C1193 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1075) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 <= 0 -C1193 <= 0 -C1122 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1077) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 <= 0 -C1193 <= 0 -C1122 <= 0 -C1157 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1079) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 <= 0 -C1193 <= 0 -C1122 <= 0 -C1157 <= 0 -C1196 >= 1 -C1160 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1081) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 <= 0 -C1193 <= 0 -C1122 <= 0 -C1157 <= 0 -C1196 >= 1 -C1160 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1084) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 <= 0 -C1193 <= 0 -C1122 <= 0 -C1157 <= 0 -C1196 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1086) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 <= 0 -C1193 <= 0 -C1122 <= 0 -C1157 <= 0 -C1196 <= 0 -C1094 <= 0 -C1179 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1088) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 <= 0 -C1193 <= 0 -C1122 <= 0 -C1157 <= 0 -C1196 <= 0 -C1094 <= 0 -C1179 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1096) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 >= 1 -C1049 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1099) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 <= 0 -C1184 <= 0 -C1161 <= 0 -C1094 <= 0 -C1139 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1101) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 <= 0 -C1184 <= 0 -C1161 <= 0 -C1094 <= 0 -C1139 <= 0 -C1130 <= 0 -C1157 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1103) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 <= 0 -C1184 <= 0 -C1161 <= 0 -C1094 <= 0 -C1139 <= 0 -C1130 <= 0 -C1157 <= 0 -C1170 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1105) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 >= 1 -C1025 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1108) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1110) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 <= 0 -C1112 <= 0 -C1121 >= 1 -C1193 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1112) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 <= 0 -C1112 <= 0 -C1121 >= 1 -C1193 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1114) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 <= 0 -C1112 <= 0 -C1121 >= 1 -C1193 <= 0 -C1184 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1118) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 <= 0 -C1112 <= 0 -C1121 <= 0 -C1073 >= 1 -
+	verified by applying Neumaier Shcherbina
+  3.7s|   800 |    22 |  8801 |  10.9 |  2077k |  30 | 201 | 133 | 133 |   0 |  0 |   0 |   0 | 7.538333e+03 | 7.615000e+03 |   1.02%|  92.56%
+------------
+node objlimit (1120) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 <= 0 -C1112 <= 0 -C1121 <= 0 -C1073 <= 0 -C1184 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1122) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 <= 0 -C1112 <= 0 -C1121 <= 0 -C1073 <= 0 -C1184 <= 0 -C1157 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1124) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 <= 0 -C1112 <= 0 -C1121 <= 0 -C1073 <= 0 -C1184 <= 0 -C1157 <= 0 -C1125 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1126) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 <= 0 -C1076 <= 0 -C1112 <= 0 -C1121 <= 0 -C1073 <= 0 -C1184 <= 0 -C1157 <= 0 -C1125 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1135) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 >= 1 -C1048 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1137) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 >= 1 -C1048 <= 0 -C1094 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1140) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 >= 1 -C1103 <= 0 -C1121 <= 0 -C1076 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1142) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 >= 1 -C1103 <= 0 -C1121 <= 0 -C1076 <= 0 -C1112 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1144) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 >= 1 -C1103 <= 0 -C1121 <= 0 -C1076 <= 0 -C1112 <= 0 -C1139 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1151) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 <= 0 -C1184 <= 0 -C1161 <= 0 -C1094 <= 0 -C1139 <= 0 -C1130 <= 0 -C1157 <= 0 -C1170 <= 0 -C1148 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1153) :C1026 >= 1 -C1003 >= 1 -C1041 <= 0 -C1067 <= 0 -C1076 <= 0 -C1085 <= 0 -C1103 <= 0 -C1112 <= 0 -C1134 <= 0 -C1121 <= 0 -C1184 <= 0 -C1161 <= 0 -C1094 <= 0 -C1139 <= 0 -C1130 <= 0 -C1157 <= 0 -C1170 <= 0 -C1148 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1170) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 <= 0 -C1121 <= 0 -C1076 <= 0 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1172) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 <= 0 -C1121 <= 0 -C1076 <= 0 -C1112 <= 0 -C1103 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1174) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 <= 0 -C1121 <= 0 -C1076 <= 0 -C1112 <= 0 -C1103 <= 0 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1176) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 >= 1 -C1067 <= 0 -C1009 <= 0 -C1121 <= 0 -C1076 <= 0 -C1112 <= 0 -C1103 <= 0 -C1139 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1185) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 <= 0 -C1015 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1187) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 <= 0 -C1015 <= 0 -C1094 <= 0 -C1130 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1189) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 <= 0 -C1015 <= 0 -C1094 <= 0 -C1130 <= 0 -C1193 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1191) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 <= 0 -C1015 <= 0 -C1094 <= 0 -C1130 <= 0 -C1193 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1196) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 >= 1 -C1121 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1068 <= 0 -C1094 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1198) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 >= 1 -C1121 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1068 <= 0 -C1094 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1201) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 >= 1 -C1059 >= 1 -C1079 >= 1 -C1136 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1203) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 >= 1 -C1059 >= 1 -C1079 >= 1 -C1136 <= 0 -C1095 >= 1 -C1141 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1205) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 >= 1 -C1059 >= 1 -C1079 >= 1 -C1136 <= 0 -C1095 >= 1 -C1141 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1208) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 >= 1 -C1059 >= 1 -C1079 >= 1 -C1136 <= 0 -C1095 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1213) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 <= 0 -C1093 >= 1 -C1023 <= 0 -C1024 <= 0 -C1042 <= 0 -C1029 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1220) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 >= 1 -C1076 <= 0 -C1130 <= 0 -C1152 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1225) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1142 <= 0 -C1161 <= 0 -C1125 <= 0 -C1084 <= 0 -C1015 >= 1 -C1055 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1243) :C1026 >= 1 -C1003 >= 1 -C1041 >= 1 -C1058 >= 1 -C1002 >= 1 -C1010 <= 0 -C1076 <= 0 -C1130 <= 0 -C1152 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1252) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 >= 1 -C1059 <= 0 -C1046 >= 1 -C1157 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1254) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 >= 1 -C1059 <= 0 -C1046 >= 1 -C1157 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1257) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 <= 0 -C1139 <= 0 -C1130 <= 0 -C1121 <= 0 -C1094 <= 0 -C1152 <= 0 -C1193 <= 0 -C1131 <= 0 -C1184 <= 0 -C1040 <= 0 -C1161 <= 0 -C1022 >= 1 -C1059 <= 0 -C1046 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1272) :C1026 >= 1 -C1003 <= 0 -C1058 <= 0 -C1067 <= 0 -C1076 <= 0 -C1121 >= 1 -C1049 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1280) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 <= 0 -C1148 <= 0 -C1028 >= 1 -C1032 >= 1 -C1121 <= 0 -C1170 <= 0 -C1161 <= 0 -C1184 <= 0 -C1068 >= 1 -C1139 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1291) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 >= 1 -C1112 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1293) :C1026 <= 0 -C1031 >= 1 -C1010 <= 0 -C1049 <= 0 -C1085 <= 0 -C1058 <= 0 -C1076 <= 0 -C1103 <= 0 -C1112 <= 0 -C1121 <= 0 -C1170 <= 0 -C1139 <= 0 -C1184 <= 0 -C1148 <= 0 -C1161 <= 0 -C1091 <= 0 -C1061 <= 0 -C1055 >= 1 -C1048 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1311) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 >= 1 -C1124 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1313) :C1026 <= 0 -C1031 >= 1 -C1010 >= 1 -C1049 >= 1 -C1067 <= 0 -C1103 <= 0 -C1139 >= 1 -C1121 <= 0 -C1197 >= 1 -C1076 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1323) :C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 <= 0 -C1040 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1325) :C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 <= 0 -C1040 <= 0 -C1121 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1327) :C1026 <= 0 -C1031 <= 0 -C1058 >= 1 -C1022 <= 0 -C1148 <= 0 -C1076 <= 0 -C1103 <= 0 -C1040 <= 0 -C1121 <= 0 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1335) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 <= 0 -C1112 <= 0 -C1085 <= 0 -C1076 <= 0 -C1067 <= 0 -C1103 >= 1 -C1124 >= 1 -
+	verified by applying Neumaier Shcherbina
+------------
+node objlimit (1343) :C1026 <= 0 -C1031 <= 0 -C1058 <= 0 -C1049 <= 0 -C1030 >= 1 -C1067 <= 0 -C1085 <= 0 -C1076 >= 1 -C1112 >= 1 -
+	verified by applying Neumaier Shcherbina
+
+SCIP Status        : problem is solved [optimal solution found]
+Solving Time (sec) : 3.89
+Solving Nodes      : 864
+Primal Bound       : +7.61500000000000e+03 (4 solutions)
+Dual Bound         : +7.61500000000000e+03
+Gap                : 0.00 %
+
+Instance solved in 3.944s spent 1.689 in events with bound [7615,7615].
+Exact-Gap: 0 (0)
+
+Statistics:
+Best solution:          4   feasible        0 reconstr        0 fix-ints        0    error
+Node feasible:          0   feasible        0 reconstr        4   factor        0    exact        0    error
+Node deletion:         50     soplex       22   NeuShb        0 reconstr        1   factor        0    exact        0    error
+Node del-pseudo:        0   feasible        0    error 
+Node infeasible:        0 infeasible        0   NeuShb        0 reconstr        0    exact        0    error
+Node objlimit:          2   feasible      374   NeuShb        0 reconstr        0   factor        0    exact        0    error
+Node not solved:        0     pseudo        0    error 
+Node objlim-ps:         0       easy        0   NeuShb        0    exact        0    error 
+
+LP Errors:        0   floating        0    exact
+TODO:
+- set objective limit for SoPlex

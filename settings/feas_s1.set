@@ -1,0 +1,2 @@
+solver.feastol = 1e-9
+solver.seed = 1
